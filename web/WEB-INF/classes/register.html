@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>注册</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+        <link rel="stylesheet" href="/css/adweb.css" type="text/css">
+    </head>
+    <body>
+        <div id="register">
+            <h2><span class="fontawesome-lock"></span>用户注册</h2>
+            <form action="/user.do" method="POST">
+                <fieldset>
+                    <p><label for="account">用户名</label></p>
+                    <p><input type="text" id="account" name="account" ></p>
+                    <p><label for="name">昵称</label></p>
+                    <p><input type="text" id="name" name="name" ></p>
+                    <p><label for="password">密码</label></p>
+                    <p><input type="password" id="password" name="password"></p>
+                    <p><label for="age">年龄</label></p>
+                    <p><input type="number" id="age" name="age" ></p>
+                    <p><input type="submit" value="注册"></p>
+                    <input type="hidden" value="register" name="method">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

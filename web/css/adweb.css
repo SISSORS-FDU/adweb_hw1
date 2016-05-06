@@ -1,0 +1,298 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- http://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+    background-color: #C0C0C0;
+    color: #000;
+    font-family: "Varela Round", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+input {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    -webkit-appearance: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ---------- LOGIN ---------- */
+
+#login {
+    margin: 50px auto;
+    width: 400px;
+}
+
+#login h2 {
+    background-color: #f95252;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+    color: #fff;
+    font-size: 28px;
+    padding: 20px 26px;
+}
+
+#login h2 span[class*="fontawesome-"] {
+    margin-right: 14px;
+}
+
+#login fieldset {
+    background-color: #fff;
+    -webkit-border-radius: 0 0 20px 20px;
+    -moz-border-radius: 0 0 20px 20px;
+    border-radius: 0 0 20px 20px;
+    padding: 20px 26px;
+}
+
+#login fieldset p {
+    color: #777;
+    margin-bottom: 14px;
+}
+
+#login fieldset p:last-child {
+    margin-bottom: 0;
+}
+
+#login fieldset input {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#login fieldset input[type="text"], #login fieldset input[type="password"] {
+    background-color: #eee;
+    color: #777;
+    padding: 4px 10px;
+    width: 328px;
+}
+
+#login fieldset input[type="submit"] {
+    background-color: #33cc77;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    padding: 4px 0;
+    width: 100px;
+}
+
+#login fieldset input[type="submit"]:hover {
+    background-color: #28ad63;
+}
+
+/* ---------- REGISTER ---------- */
+
+#register {
+    margin: 50px auto;
+    width: 400px;
+}
+
+#register h2 {
+    background-color: #f95252;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+    color: #fff;
+    font-size: 28px;
+    padding: 20px 26px;
+}
+
+#register h2 span[class*="fontawesome-"] {
+    margin-right: 14px;
+}
+
+#register fieldset {
+    background-color: #fff;
+    -webkit-border-radius: 0 0 20px 20px;
+    -moz-border-radius: 0 0 20px 20px;
+    border-radius: 0 0 20px 20px;
+    padding: 20px 26px;
+}
+
+#register fieldset p {
+    color: #777;
+    margin-bottom: 14px;
+}
+
+#register fieldset p:last-child {
+    margin-bottom: 0;
+}
+
+#register fieldset input {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#register fieldset input[type="text"], #register fieldset input[type="password"], #register fieldset input[type="number"] {
+    background-color: #eee;
+    color: #777;
+    padding: 4px 10px;
+    width: 328px;
+}
+
+#register fieldset input[type="submit"] {
+    background-color: #33cc77;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    padding: 4px 0;
+    width: 100px;
+}
+
+#register fieldset input[type="submit"]:hover {
+    background-color: #28ad63;
+}
+
+/* ---------- EDIT ---------- */
+
+#edit {
+    margin: 50px auto;
+    width: 400px;
+}
+
+#edit h2 {
+    background-color: #f95252;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+    color: #fff;
+    font-size: 28px;
+    padding: 20px 26px;
+}
+
+#edit h2 span[class*="fontawesome-"] {
+    margin-right: 14px;
+}
+
+#edit fieldset {
+    background-color: #fff;
+    -webkit-border-radius: 0 0 20px 20px;
+    -moz-border-radius: 0 0 20px 20px;
+    border-radius: 0 0 20px 20px;
+    padding: 20px 26px;
+}
+
+#edit fieldset p {
+    color: #777;
+    margin-bottom: 14px;
+}
+
+#edit fieldset p:last-child {
+    margin-bottom: 0;
+}
+
+#edit fieldset input {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#edit fieldset input[type="text"], #edit fieldset input[type="password"], #edit fieldset input[type="number"] {
+    background-color: #eee;
+    color: #777;
+    padding: 4px 10px;
+    width: 328px;
+}
+
+#edit fieldset input[type="submit"] {
+    background-color: #33cc77;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    padding: 4px 0;
+    width: 100px;
+}
+
+#edit fieldset input[type="submit"]:hover {
+    background-color: #28ad63;
+}
+
+/* ---------- INFO ---------- */
+
+#info {
+    margin: 50px auto;
+    width: 400px;
+}
+
+#info h2 {
+    background-color: #f95252;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+    color: #fff;
+    font-size: 28px;
+    padding: 20px 26px;
+}
+
+#info h2 span[class*="fontawesome-"] {
+    margin-right: 14px;
+}
+
+#info fieldset {
+    background-color: #fff;
+    -webkit-border-radius: 0 0 20px 20px;
+    -moz-border-radius: 0 0 20px 20px;
+    border-radius: 0 0 20px 20px;
+    padding: 20px 26px;
+}
+
+#info fieldset p {
+    color: #777;
+    margin-bottom: 14px;
+}
+
+#info fieldset p:last-child {
+    margin-bottom: 0;
+}
+
+#info fieldset input {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#info fieldset input[type="text"], #info fieldset input[type="password"], #info fieldset input[type="number"] {
+    background-color: #eee;
+    color: #777;
+    padding: 4px 10px;
+    width: 328px;
+}
+
+#info fieldset input[type="button"] {
+    background-color: #33cc77;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    padding: 4px 0;
+    width: 100px;
+}
+
+#info fieldset input[type="button"]:hover {
+    background-color: #28ad63;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>修改</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+        <link rel="stylesheet" href="/css/adweb.css" type="text/css">
+    </head>
+    <body>
+        <div id="edit">
+            <h2><span class="fontawesome-lock"></span>修改信息</h2>
+            <form action="/user.do" method="POST">
+                <fieldset>
+                    <p><label for="account">用户名</label></p>
+                    <p><input type="text" id="account" name="account"></p>
+                    <p><label for="name">昵称</label></p>
+                    <p><input type="text" id="name" name="name" ></p>
+                    <p><label for="password">密码</label></p>
+                    <p><input type="password" id="password" name="password"></p>
+                    <p><label for="age">年龄</label></p>
+                    <p><input type="number" id="age" name="age" ></p>
+                    <p><input type="submit" value="确定"></p>
+                    <input type="hidden" id="id" name="id"/>
+                    <input type="hidden" value="edit" name="method">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $.ajax({
+            type: "GET",
+            url: "user.do?method=getinfo",
+            dataType: "text",
+            data: "",
+            success: function (data) {
+                var response = JSON.parse(data);
+                $("#account").val(response.user.account);
+                $("#name").val(response.user.name);
+                $("#password").val(response.user.password);
+                $("#age").val(response.user.age);
+                $("#id").val(response.user.id);
+            },
+            error: function () {
+            }
+        });
+    </script>
+</html>

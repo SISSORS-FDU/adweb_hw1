@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+    <head>
+        <meta charset="utf-8">
+        <title>登录</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+        <link rel="stylesheet" href="/css/adweb.css" type="text/css">
+    </head>
+    <body>
+        <div id="login">
+            <h2><span class="fontawesome-lock"></span>用户登录</h2>
+            <form action="/user.do" method="POST">
+                <fieldset>
+                    <p><label for="account">用户名</label></p>
+                    <p><input type="text" id="account" value="" name="account" ></p>
+                    <p><label for="password">密码</label></p>
+                    <p><input type="password" id="password" name="password"></p>
+                    <p><input type="submit" value="登录"></p>
+                    <input type="hidden" value="login" name="method">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="/css/adweb.css" type="text/css">
+    </head>
+    <body>
+        <div id="info">
+            <h2><span class="fontawesome-lock"></span>信息</h2>
+            <form>
+                <fieldset>
+                    <p id="account">用户名：</p>
+                    <p id="name">昵称：</p>
+                    <p id="password">密码：</p>
+                    <p id="age">年龄：</p>
+                    <p><a href="edit.html"><input type="button" value="修改信息"></a></p>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $.ajax({
+            type: "GET",
+            url: "user.do?method=getinfo",
+            dataType: "text",
+            data: "",
+            success: function (data) {
+                var response = JSON.parse(data);
+                $("#account").append(response.user.account);
+                $("#name").append(response.user.name);
+                $("#password").append(response.user.password);
+                $("#age").append(response.user.age);
+                $("title").append(response.user.name);
+            },
+            error: function () {
+            }
+        });
+    </script>
+</html>
